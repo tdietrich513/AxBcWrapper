@@ -7,8 +7,6 @@ namespace AxBcWrapper.Query
 {
     public abstract class ExpressionVisitor
     {
-        #region Methods
-
         protected virtual Expression Visit(Expression exp)
         {
             if (exp == null)
@@ -93,10 +91,8 @@ namespace AxBcWrapper.Query
                 {
                     return Expression.Coalesce(left, right, conversion as LambdaExpression);
                 }
-                else
-                {
-                    return Expression.MakeBinary(b.NodeType, left, right, b.IsLiftedToNull, b.Method);
-                }
+
+                return Expression.MakeBinary(b.NodeType, left, right, b.IsLiftedToNull, b.Method);
             }
             return b;
         }
@@ -376,7 +372,5 @@ namespace AxBcWrapper.Query
             }
             return u;
         }
-
-        #endregion
     }
 }
