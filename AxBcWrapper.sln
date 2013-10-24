@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxBcWrapper", "AxBcWrapper\AxBcWrapper.csproj", "{B7823307-F61B-46DC-8A1B-9140EB482DF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxBcWrapperTests", "AxBcWrapperTests\AxBcWrapperTests.csproj", "{9473EB86-0922-4A1D-8058-91A5FEE383BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7823307-F61B-46DC-8A1B-9140EB482DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7823307-F61B-46DC-8A1B-9140EB482DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7823307-F61B-46DC-8A1B-9140EB482DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7823307-F61B-46DC-8A1B-9140EB482DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9473EB86-0922-4A1D-8058-91A5FEE383BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9473EB86-0922-4A1D-8058-91A5FEE383BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9473EB86-0922-4A1D-8058-91A5FEE383BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9473EB86-0922-4A1D-8058-91A5FEE383BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
