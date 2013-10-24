@@ -29,25 +29,7 @@ namespace AxBcWrapper.Query
             
 
             var results = _session.Query(query, elementType);
-            //if (result.Projector != null)
-            //{
-            //    var projector = result.Projector.Compile();
-            //    return Activator.CreateInstance(
-            //        typeof(ProjectionReader<>).MakeGenericType(elementType),
-            //        BindingFlags.Instance | BindingFlags.NonPublic,
-            //        null,
-            //        new object[] { dt.CreateDataReader(), projector },
-            //        null);
-            //}
-            //else
-            //{
-            //    return Activator.CreateInstance(
-            //        typeof(ObjectReader<>).MakeGenericType(elementType),
-            //        BindingFlags.Instance | BindingFlags.NonPublic,
-            //        null,
-            //        new object[] { dt.CreateDataReader() },
-            //        null);
-            //}
+          
             return results;
         }
 
