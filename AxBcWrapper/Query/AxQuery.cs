@@ -80,49 +80,5 @@ namespace AxBcWrapper.Query
         {
             return ((IEnumerable)_provider.Execute(_expression)).GetEnumerator();
         }
-
-        //public class AxQuery<T> : IQueryable<T>
-        //{
-        //    public IEnumerator<T> GetEnumerator()
-        //    {
-        //        return Provider.Execute<IEnumerable<T>>(Expression).GetEnumerator();
-        //    }
-
-        //    IEnumerator IEnumerable.GetEnumerator()
-        //    {
-        //        return GetEnumerator();
-        //    }
-
-        //    public AxQuery(AxSession session)
-        //    {
-        //        Provider = new AxQueryProvider(session);
-        //        Expression = Expression.Constant(this);
-        //    }
-
-        //    public AxQuery(AxQueryProvider provider)
-        //    {
-        //        if (provider == null)
-        //        {
-        //            throw new ArgumentNullException("provider");
-        //        }
-
-        //        Provider = provider;
-        //        Expression = Expression.Constant(this);
-        //    }
-
-        //    public AxQuery(AxQueryProvider provider, Expression expression) : this(provider)
-        //    {            
-        //        if (expression == null)
-        //        {
-        //            throw new ArgumentNullException("expression");
-        //        }            
-
-        //        Expression = expression;
-        //    }
-
-        //    public Expression Expression { get; private set; }
-        //    public Type ElementType { get { return typeof(T); } }
-        //    public IQueryProvider Provider { get; private set; }
-        //}
     }
 }
